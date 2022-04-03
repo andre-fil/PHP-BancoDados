@@ -15,9 +15,17 @@
             <?php
             $nome = 'André';
             $idade = 20;
+            $a = 3;
+            $b = 5;
             echo $nome. " tem ". $idade, " anos  <br>";
-            echo "$nome tem $idade anos"
-;            ?>
+            echo "$nome tem $idade anos <br>";
+            echo "${a}*${b} = ". $a*$b. "<br>";
+            $x = 'abc';
+            $$x = 'def';
+            echo "Var x = ${x} <br>";
+            echo "Var abc =  ".$$x;
+
+             ?>
         </div>
     </head>
 </body>
