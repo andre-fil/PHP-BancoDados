@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modelo.css">
+    <title>Operações</title>
+</head>
+<body>
+    <h1>Operações</h1>
+    <div>
+        <form action="operacao.php" method="get">
+            <label for="num">Número: </label>
+            <input type="number" name="num" id="num" class="num">
+            <br/>
+            <fieldset> <legend>Operação</legend>
+                <label for="dobro">Dobro</label>
+                <input type="radio" name="oper" id="dobro" value="1" checked>
+                <label for="cubo">Cubo</label>
+                <input type="radio" name="oper" id="cubo" value="2">
+                <label for="cubo">triplo</label>
+                <input type="radio" name="oper" id="triplo" value="3">
+            </fieldset>
+            <input type="submit" value="Calcular">
+
+        </form>
+    </div>
+    
+</body>
+</html>

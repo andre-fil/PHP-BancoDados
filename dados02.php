@@ -15,8 +15,15 @@
             $nasc = isset($_GET['nasc'])?$_GET['nasc']:0;
             $sexo = isset($_GET['sexo'])?$_GET['sexo']:'[sem sexo]';
             $anos = date("Y") - $nasc;
-            echo "O nome recebido é $nome, do sexo $sexo, e tem $anos anos"
-        
+            echo "O nome recebido é $nome, do sexo $sexo, e tem $anos anos <br>";
+            if ($anos <16){
+                $vota = "não vota";
+            } elseif(($anos >=16 && $anos <18) || ($anos > 65)){
+                $vota = "voto opcional";
+            } else{
+                $vota = "voto obrigatório";
+            }
+             echo "O tipo de voto de $nome é $vota";
 
         ?>
          <br/>
