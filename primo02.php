@@ -23,10 +23,10 @@
                 }
             }
             echo "<br> total de multiplos: $cont <br>";
-            if($cont >= 2){
-                echo 'não eh primo';
+            if($cont > 2 || $cont == 1){
+                echo "${num} não eh primo";
             } else{
-                echo 'eh primo';
+                echo "${num} eh primo";
             }
 
 
